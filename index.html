@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Algoritma</title>
+</head>
+<body>
+    <script> 
+    // lkpd4 no1
+        let PABP = 70;
+        let MATH = 82;
+        let DPK = 77;
+        let NilaiTerakhir = (PABP + MATH + DPK) / 3;
+
+        if (NilaiTerakhir >=80 && NilaiTerakhir <= 100){
+            grade ="A";
+        }else if (NilaiTerakhir >=75 && NilaiTerakhir <= 79){
+            grade ="B";
+        }else if (NilaiTerakhir >=65 && NilaiTerakhir <= 74){
+            grade ="C";
+        }else if (NilaiTerakhir >=45 && NilaiTerakhir <= 64){
+            grade ="D";
+        }else if (NilaiTerakhir >=0 && NilaiTerakhir <= 44){
+            grade ="E";
+        }else {
+            grade ="k";
+        }
+        console .log(NilaiTerakhir)
+        console .log(grade)
+
+        // lkpd4 no2
+        let angka=22505197803;
+        let golongan=Math.floor(angka/10000000000);
+        let dd=Math.floor(angka/100000000%100)
+        let mm=Math.floor(angka/1000000%100);
+        let yyyy=Math.floor(angka/100%10000);
+        let nn=Math.floor(angka % 100)
+        
+        switch(mm) {
+            case 1:
+                console.log('januari');
+                break;
+            case 2:
+                console.log('februari')
+                break;
+                    
+            case 5:
+                console.log('mei');
+                break;
+                default:
+                    console.log('tidak diketahui')
+        }
+
+        console.log('golongan:',golongan)
+        console.log('hari:',dd)
+        console.log('bulan:',mm)
+        console.log('tahun:',yyyy)
+        console.log('no urut:',nn)
+
+        // lkpd4 no3
+        let jam=23;
+        let menit=90;
+        let detik=23;
+
+        let totaldetik=(jam*3600)+(menit*60)+(detik)+(1)
+
+        jam=Math.floor(totaldetik/3600)
+        menit=Math.floor(totaldetik%3600/60)
+        detik=totaldetik % 60
+
+        console.log(jam+"jam", menit+"menit", detik+"detik")
+    </script>  
+</body>
+</html>
